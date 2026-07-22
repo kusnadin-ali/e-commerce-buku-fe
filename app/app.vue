@@ -1,51 +1,16 @@
 <script setup>
 
+import Navbar from "~/components/Navbar.vue";
 </script>
 
 <template>
   <UApp>
-    <UHeader>
-      <template #left>
+    <Navbar/>
 
-      </template>
-
-      <template #right>
-        <UColorModeButton />
-
-        <UButton
-          to="https://github.com/nuxt-ui-templates/starter"
-          target="_blank"
-          icon="i-simple-icons-github"
-          aria-label="GitHub"
-          color="neutral"
-          variant="ghost"
-        />
-      </template>
-    </UHeader>
-
-    <UMain>
-      <NuxtPage />
+    <UMain class="py-4 px-5 h-full ">
+      <NuxtPage/>
     </UMain>
 
-    <USeparator icon="i-simple-icons-nuxtdotjs" />
 
-    <UFooter>
-      <template #left>
-        <p class="text-sm text-muted">
-          Built with Nuxt UI • © {{ new Date().getFullYear() }}
-        </p>
-      </template>
-
-      <template #right>
-        <UButton
-          to="https://github.com/nuxt-ui-templates/starter"
-          target="_blank"
-          icon="i-simple-icons-github"
-          aria-label="GitHub"
-          color="neutral"
-          variant="ghost"
-        />
-      </template>
-    </UFooter>
   </UApp>
 </template>
